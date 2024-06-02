@@ -1,0 +1,169 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to right ,rgb(10, 10, 10),rgb(3, 3, 224),blue);
+}
+nav ul{
+    display: flex;
+    list-style-type: none;
+}
+nav ul li{
+    margin-top: 40px;
+    margin-left: 5px;
+}
+nav ul li a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+    padding: 10px;
+    transition: all linear .5s;
+}
+nav .first{
+    width: 180px;
+    height: 60px;
+    font-size: 50px;
+    font-weight: bold;
+    margin: 25px 50px;
+    background-image: url('https://img.freepik.com/free-photo/vibrant-colors-blend-abstract-backdrop-pattern-generated-by-ai_188544-9565.jpg?size=626&ext=jpg&ga=GA1.1.44546679.1716940800&semt=ais_user');
+    background-size: cover;
+    color: transparent;
+    background-clip: text;
+}
+nav ul li:nth-child(2){
+    margin-left: 50px;
+}
+
+nav ul li:last-child a{
+    margin-top: 30px;
+    margin-left: 80px;
+    border-radius: 20px;
+    border: 3px solid white;
+}
+nav ul li a:hover{
+    border-radius: 20px;
+    background-color: rgb(31, 31, 30);
+}
+/* carousel */
+.carousel-item{
+    margin-top: 3px;
+    width: 500px;
+    height: 70vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+/* Movies */
+
+
+.section2 .movies .div{
+    position: absolute;
+    padding-top: 70px;
+    width: 220px;
+    height: 270px;
+    border-radius: 20px;
+    backdrop-filter: blur(2px);
+    transition: all .2s linear;
+    z-index: -1;
+}
+.section2 .movies .div .h1{
+    padding: 5px;
+    text-transform: uppercase;
+    border-radius: 5px;
+}
+.section2 .movies .div .h1 a{
+    text-decoration: none;
+    color: white;
+    background-color: blue;
+    font-size: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    text-align: center;
+    margin-left: 15px;
+}
+.section2 {
+    width: 90%;
+    height: 850px;
+    margin: 5% 5% 0 5%;
+}
+.section2 .name{
+    display: flex;
+    justify-content: space-between;
+}
+.section2 .name h1{
+    margin-top:15px;
+    text-transform: uppercase;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgba(6, 6, 119, 0.863);
+    margin-bottom: 10px;
+}
+.section2 .name h2 a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 15px;
+    padding: 9px;
+    background-color: blue;
+    border-radius: 10px;
+    border: 1px solid;
+}
+.section2 .movies{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section2 .movies img{
+    width: 220px;
+    height: 270px;
+    border-radius: 20px;
+}
+.section2 .movies h1{
+    margin-top: 15px;
+    font-size: 30px;
+}
+.section2 .movies .time, .tim{
+    display: flex;
+    justify-content: space-between;
+}
+.section2 .movies .time h4{
+    font-size: 18px;
+}
+.section2 .movies .time .tim h2{
+    font-size: 15px;
+    padding: 3px;
+    margin-left: 4px;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    background-color: rgb(80, 80, 250);
+}
+.section2 .movies h2{
+    font-size: 15px;
+}
+
+.section2 .movies .movie1 .parent:hover .div{
+    z-index: 1;
+}
+.section2 .movies .parent .book a{
+    margin-left: 30px;
+}
+.section2 .movies .parent .book:hover a{
+    background-color: white;
+    color: blue;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
